@@ -1,0 +1,12 @@
+.custom-counter {
+    counter-reset: item; /* Reseta o contador para cada lista */
+    list-style-type: none; /* Remove os marcadores padrão */
+}
+.custom-counter li {
+    counter-increment: item; /* Incrementa o contador para cada item */
+    margin-bottom: 10px; /* Adiciona um espaço entre os itens */
+}
+.custom-counter li::before {
+    content: counter(item) ". "; /* Exibe o número do item seguido de um ponto */
+    font-weight: bold; /* Deixa o número em negrito */
+}
