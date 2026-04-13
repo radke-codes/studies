@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: yellow; /* Se não fosse o !important, esta cor seria aplicada */
+}
+#important {
+    color: lightcoral !important;
+}

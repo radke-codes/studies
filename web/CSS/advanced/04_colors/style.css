@@ -1,0 +1,25 @@
+.color-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: hsla(0, 100%, 50%, 0.815);
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    opacity: 0.8;
+}
