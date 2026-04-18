@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Exemplo de Variáveis com JavaScript</title>
+  <style>
+    :root {
+      --main-color: #3498db; /* Cor inicial */
+      --main-color2: #e74c3c; /* Segunda cor */
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      transition: color 0.5s;
+      color: var(--main-color);
+    }
+    
+    .columns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Título da Coluna</h2>
+  <div class="columns">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    
+    function changeColor() {
+      // Alterna entre as duas cores
+      const currentColor = getComputedStyle(root).getPropertyValue('--main-color').trim();
+      const newColor = currentColor === '#3498db' ? 'var(--main-color2)' : '#3498db';
+      
+      root.style.setProperty('--main-color', newColor);
+      
+      // Agendamos a próxima mudança de cor
+      setTimeout(changeColor, 2000);
+    }
+    
+    // Inicia a animação
+    setTimeout(changeColor, 2000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+h2 {
+    text-align: center;
+    margin: 0 0 1em;
+}
+.columns {
+  column-count: 3;
+  column-gap: 20px;
+  column-rule: 1px solid #e20909;
+}
